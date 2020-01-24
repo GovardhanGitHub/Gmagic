@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:layout_margin="8dp"
+    tools:context=".Main3Activity">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:background="#97bc62"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/largeLabel"
+            style="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Your Profile Details"
+            android:textStyle="bold"
+
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/largeLabel"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="4dp">
+
+                <TextView
+
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Name : "
+                    android:textStyle="bold"
+
+                    />
+
+                <TextView
+                    android:id="@+id/namelabel"
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="4dp">
+
+                <TextView
+
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Mobile Number : "
+                    android:textStyle="bold"
+
+                    />
+
+                <TextView
+                    android:id="@+id/numlabel"
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/findAnonymous"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:onClick="findAnonymous"
+        android:text="find Anonymous" />
+
+    <Button
+        android:id="@+id/searchNum"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:onClick="searchNumber"
+        android:text="Search Number(authenticatad users)" />
+
+
+    <Button
+        android:id="@+id/searchName"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:onClick="searchName"
+        android:text="Search Name(authenticatad users)" />
+
+
+    <Button
+        android:id="@+id/AdvancedsearchName"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:onClick="advancedsearchName"
+        android:text="Search Number(Advancd version)" />
+
+
+    <Button
+        android:id="@+id/prfixNamesearch"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:onClick="prefixNameSearch"
+        android:text="prefix Name Search(first 3 characters)" />
+
+
+    <Button
+        android:id="@+id/endedWithThreeNumberSearch"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:onClick="endedWithThreeNumberSearch"
+        android:text="Search Number (Last 3 digits)" />
+
+
+
+
+</LinearLayout>
+
+

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:padding="4dp"
+    tools:context=".SearchName">
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:background="#21b6a8"
+       android:padding="4dp">
+
+
+       <EditText
+           android:id="@+id/name_search"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:textColor="#000"
+           android:textSize="15dp"
+           android:layout_weight="80"
+           android:imeOptions="actionSearch"
+           android:inputType="text"
+           android:layout_marginRight="8dp"
+           android:hint="Search Name" />
+
+       <Button
+           android:onClick="serachclick"
+           android:layout_width="0dp"
+           android:layout_height="38dp"
+           android:layout_weight="10"
+           android:background="@drawable/ic_search_black_24dp"/>
+           />
+
+
+   </LinearLayout>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="8dp"
+        android:id="@+id/Search_Name_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"/>
+
+</LinearLayout>
